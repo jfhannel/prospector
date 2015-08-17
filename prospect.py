@@ -6,6 +6,8 @@ USAGE: 'python prospect.py <input csv filename>'
 	- MAY include name, full name, first name, last name, title columns
 	- Any other columns will be ignored
 
+	- If title is present, prospector results are filtered ONLY on title - name is used in the absence of title
+
 Creates file: <input file>_with_domains.csv
 	- This is an intermediate file which includes the company domain, looked up via Google
 	- If you want to recompute this file, you must delete it then re-run prospect.py

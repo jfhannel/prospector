@@ -25,6 +25,6 @@ outfilename = os.path.splitext(infilename)[0]+'_with_domains.csv'
 resultfilename = os.path.splitext(infilename)[0]+'_prospect_results.csv'
 
 if not os.path.isfile(outfilename):
-	os.system('python prep_prospector.py '+infilename+' '+outfilename)
+	os.system('python prep_prospects.py '+infilename+' '+outfilename)
 
 os.system('python get_prospects.py '+outfilename+' '+resultfilename)
